@@ -1,0 +1,45 @@
+# Modulation Instability Configuration (TXT Format)
+# Date: 2025-08-13
+# Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
+#          Fikry P. Lugina, Rusmawan Suwarman, Dasapta E. Irawan
+
+# Scenario identification
+scenario_name = Modulation Instability
+
+# Domain parameters (comparable across all scenarios)
+domain_length = 50.0
+num_points = 512
+
+# Time integration (comparable across all scenarios)
+t_final = 20.0
+n_snapshots = 100
+
+# Initial condition parameters
+initial_condition = modulation_instability
+amplitude = 1.0
+width = 5.0
+center = 0.0
+noise_level = 0.01
+seed = 42
+
+# Numerical solver settings
+method = DOP853
+rtol = 1.0e-9
+atol = 1.0e-11
+max_step = 0.1
+
+# Performance and stability options
+use_numba = false
+use_adaptive = true
+use_filtering = true
+monitor_conservation = true
+
+# Output settings
+save_netcdf = true
+save_animation = true
+fps = 20
+dpi = 100
+
+# Output directory
+output_dir = ../outputs
+log_dir = ../logs

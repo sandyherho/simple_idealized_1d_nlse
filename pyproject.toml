@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "simple-idealized-1d-nlse"
+version = "0.0.1"
+description = "A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation"
+authors = [
+    "Sandy H. S. Herho <sandy.herho@email.ucr.edu>",
+    "Iwan P. Anwar",
+    "Faruq Khadami",
+    "Fikry P. Lugina",
+    "Rusmawan Suwarman",
+    "Dasapta E. Irawan"
+]
+license = "WTFPL"
+readme = "README.md"
+packages = [{include = "simple_idealized_1d_nlse", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+netCDF4 = "*"
+pyyaml = "*"
+tqdm = "*"
+
+[tool.poetry.group.performance]
+optional = true
+
+[tool.poetry.group.performance.dependencies]
+numba = "*"
+
+[tool.poetry.group.fancy]
+optional = true
+
+[tool.poetry.group.fancy.dependencies]
+colorama = "*"
+tabulate = "*"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+black = "*"
+flake8 = "*"
+
+[tool.poetry.scripts]
+nlse-simulate = "simple_idealized_1d_nlse.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

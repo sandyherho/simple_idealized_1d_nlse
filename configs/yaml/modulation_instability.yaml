@@ -1,0 +1,44 @@
+# Modulation Instability Configuration
+# Date: 2025-08-13
+# Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
+#          Fikry P. Lugina, Rusmawan Suwarman, Dasapta E. Irawan
+
+scenario_name: "Modulation Instability"
+
+# Domain parameters (comparable across all scenarios)
+domain_length: 50.0
+num_points: 512
+
+# Time integration (comparable across all scenarios)
+t_final: 20.0
+n_snapshots: 100
+
+# Initial condition parameters
+initial_condition: "modulation_instability"
+amplitude: 1.0       # Gaussian amplitude
+width: 5.0          # Gaussian width (σ)
+center: 0.0         # Center position
+noise_level: 0.01   # Noise amplitude (1% of signal)
+seed: 42            # Random seed for reproducibility
+
+# Numerical solver settings
+method: "DOP853"  # 8th-order Dormand-Prince for high accuracy
+rtol: 1.0e-9      # Relative tolerance
+atol: 1.0e-11     # Absolute tolerance
+max_step: 0.1     # Maximum step size
+
+# Performance and stability options
+use_numba: false          # Disable for complex noise patterns
+use_adaptive: true        # Adaptive time-stepping (crucial for instability)
+use_filtering: true       # Anti-aliasing filter (2/3 rule)
+monitor_conservation: true # Monitor conserved quantities
+
+# Output settings
+save_netcdf: true
+save_animation: true
+fps: 20
+dpi: 100
+
+# Output directory (relative to package)
+output_dir: "../outputs"
+log_dir: "../logs"
