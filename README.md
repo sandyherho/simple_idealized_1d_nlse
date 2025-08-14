@@ -1,11 +1,7 @@
 # Simple Idealized 1D NLSE Solver
 
-[![PyPI version](https://badge.fury.io/py/simple-idealized-1d-nlse.svg)](https://badge.fury.io/py/simple-idealized-1d-nlse)
-[![Python Version](https://img.shields.io/pypi/pyversions/simple-idealized-1d-nlse.svg)](https://pypi.org/project/simple-idealized-1d-nlse/)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-[![Tests](https://github.com/samuderasains/simple-idealized-1d-nlse/workflows/tests/badge.svg)](https://github.com/samuderasains/simple-idealized-1d-nlse/actions)
-[![codecov](https://codecov.io/gh/samuderasains/simple-idealized-1d-nlse/branch/main/graph/badge.svg)](https://codecov.io/gh/samuderasains/simple-idealized-1d-nlse)
-[![Institution](https://img.shields.io/badge/Institution-Samudera%20Sains%20Teknologi%20Ltd.-orange.svg)](https://samuderasains.tech)
+
 
 A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation (NLSE)
 
@@ -37,13 +33,6 @@ where $\psi$ is the complex wave function.
 pip install simple-idealized-1d-nlse
 ```
 
-### Using Poetry (recommended for development)
-
-```bash
-git clone https://github.com/samuderasains/simple-idealized-1d-nlse.git
-cd simple-idealized-1d-nlse
-poetry install
-```
 
 ### From source
 
@@ -144,6 +133,6 @@ If you use this software in your research, please cite:
   year = {2025},
   version = {0.0.1},
   institution = {Samudera Sains Teknologi Ltd.},
-  url = {https://github.com/samuderasains/simple-idealized-1d-nlse}
+  url = {https://github.com/sandyherho/simple_idealized_1d_nlse}
 }
 ```
