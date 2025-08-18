@@ -395,14 +395,9 @@ class NLSESolver:
         psi_t0 = np.fft.fft(initial_condition)
         timing['fft_initial'] = time.time() - fft_start
         
-        # Compute initial conserved quantities
+        # Compute initial conserved quantities (but don't print)
         if monitor_conservation:
             initial_conserved = self._compute_conserved_quantities(initial_condition)
-            if self.verbose:
-                print(f"Initial conserved quantities:")
-                print(f"  Mass: {initial_conserved['mass']:.6e}")
-                print(f"  Momentum: {initial_conserved['momentum']:.6e}")
-                print(f"  Energy: {initial_conserved['energy']:.6e}")
         
         if self.logger:
             self.logger.info(f"Starting NLSE integration: T={t_final}, snapshots={n_snapshots}")
@@ -504,7 +499,7 @@ class NLSESolver:
         
         timing['ifft_transform'] = time.time() - ifft_start
         
-        # Monitor conservation laws
+        # Monitor conservation laws (but don't print)
         conservation_data = {}
         if monitor_conservation:
             conservation_start = time.time()
@@ -534,12 +529,6 @@ class NLSESolver:
             }
             
             timing['conservation_check'] = time.time() - conservation_start
-            
-            if self.verbose:
-                print(f"\n{Fore.YELLOW}Conservation Errors:{Style.RESET_ALL}")
-                print(f"  Mass: {mass_error.max():.2e}")
-                print(f"  Energy: {energy_error.max():.2e}")
-                print(f"  Momentum: {momentum_error.max():.2e}")
         
         # Total time
         timing['total_time'] = time.time() - start_time
@@ -553,8 +542,6 @@ class NLSESolver:
             self.logger.info(f"Performance: FFT={timing['fft_initial']:.3f}s, "
                            f"Integration={timing['integration']:.3f}s, "
                            f"IFFT={timing['ifft_transform']:.3f}s")
-            if monitor_conservation:
-                self.logger.info(f"Conservation error: {conservation_data['conservation_error']:.2e}")
         
         return {
             'x': self.x,
@@ -590,31 +577,13 @@ class NLSESolver:
               f"({100*timing['fft_initial']/timing['total_time']:.1f}%)")
         print(f"  ├─ Integration: {timing['integration']:.3f}s "
               f"({100*timing['integration']/timing['total_time']:.1f}%)")
-        print(f"  ├─ IFFT (final): {timing['ifft_transform']:.3f}s "
+        print(f"  └─ IFFT (final): {timing['ifft_transform']:.3f}s "
               f"({100*timing['ifft_transform']/timing['total_time']:.1f}%)")
-        if 'conservation_check' in timing:
-            print(f"  └─ Conservation: {timing['conservation_check']:.3f}s "
-                  f"({100*timing['conservation_check']/timing['total_time']:.1f}%)")
         
         # Solver statistics
         print(f"\n{Fore.YELLOW}Solver Statistics:{Style.RESET_ALL}")
         print(f"  Function evaluations: {sol.nfev}")
         print(f"  Status: {Fore.GREEN if sol.success else Fore.RED}"
               f"{'Success' if sol.success else 'Failed'}{Style.RESET_ALL}")
-        
-        # Numerical stability
-        if conservation:
-            print(f"\n{Fore.YELLOW}Numerical Stability:{Style.RESET_ALL}")
-            error_level = conservation['conservation_error']
-            if error_level < 1e-10:
-                color = Fore.GREEN
-                status = "Excellent"
-            elif error_level < 1e-8:
-                color = Fore.YELLOW
-                status = "Good"
-            else:
-                color = Fore.RED
-                status = "Poor"
-            print(f"  Conservation: {color}{status}{Style.RESET_ALL} (error: {error_level:.2e})")
         
         print(f"{Fore.CYAN}{'='*70}{Style.RESET_ALL}\n")
