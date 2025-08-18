@@ -5,15 +5,15 @@
 
 A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation (NLSE)
 
-## 📋 Overview
+## Overview
 
 This package provides a comprehensive framework for solving the 1D NLSE:
 
-$ i \frac{\partial \psi}{\partial t} + \frac{1}{2} \frac{\partial^2 \psi}{\partial x^2 } + |\psi|^2 \psi = 0,$
+$$i \frac{\partial \psi}{\partial t} + \frac{1}{2} \frac{\partial^2 \psi}{\partial x^2 } + |\psi|^2 \psi = 0,$$
 
 where $\psi$ is the complex wave function.
 
-## 🚀 Features
+## Features
 
 - **Multiple Scenarios**: Single soliton, two-soliton collision, breather solutions, modulation instability
 - **Enhanced Numerical Stability**: DOP853 solver, adaptive time-stepping, conservation law monitoring
@@ -25,7 +25,7 @@ where $\psi$ is the complex wave function.
 - **Data Management**: NetCDF output format with institutional metadata
 - **Conservation Monitoring**: Real-time tracking of conserved quantities
 
-## 📦 Installation
+## Installation
 
 ### From PyPI
 
@@ -42,7 +42,7 @@ cd simple-idealized-1d-nlse
 pip install -e .
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Command Line Interface
 
@@ -60,37 +60,7 @@ nlse-simulate --all
 nlse-simulate single_soliton --verbose
 ```
 
-### Python API
-
-```python
-from simple_idealized_1d_nlse import NLSESolver, SingleSoliton
-
-# Create solver with enhanced stability
-solver = NLSESolver(
-    domain_length=50, 
-    num_points=512, 
-    use_adaptive=True,  # Adaptive stepping
-    verbose=True
-)
-
-# Set initial condition
-initial = SingleSoliton(amplitude=2.0, position=0.0, velocity=1.0)
-
-# Run simulation with monitoring
-result = solver.solve(
-    initial_condition=initial,
-    t_final=20.0,
-    n_snapshots=100,
-    monitor_conservation=True,
-    show_progress=True
-)
-
-# Results include wave function ψ
-print(f"Max |ψ|: {result['psi_abs'].max():.4f}")
-print(f"Conservation error: {result['conservation']['conservation_error']:.2e}")
-```
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 simple_idealized_1d_nlse/
@@ -108,7 +78,7 @@ simple_idealized_1d_nlse/
 ```
 
 
-## 👥 Authors
+## Authors
 
 - **Sandy H. S. Herho** - sandy.herho@email.ucr.edu
 - **Iwan P. Anwar** 
@@ -117,11 +87,11 @@ simple_idealized_1d_nlse/
 - **Rusmawan Suwarman** 
 - **Dasapta E. Irawan** 
 
-## 📄 License
+## License
 
 This project is licensed under the WTFPL License - see the [LICENSE](LICENSE) file for details.
 
-## 📚 Citation
+## Citation
 
 If you use this software in your research, please cite:
 
