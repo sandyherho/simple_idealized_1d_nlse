@@ -7,23 +7,12 @@ A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation (NLSE
 
 ## Overview
 
-This package provides a comprehensive framework for solving the 1D NLSE:
+This package provides a numerical framework for solving the 1D NLSE:
 
 $$i \frac{\partial \psi}{\partial t} + \frac{1}{2} \frac{\partial^2 \psi}{\partial x^2 } + |\psi|^2 \psi = 0,$$
 
 where $\psi$ is the complex wave function.
 
-## Features
-
-- **Multiple Scenarios**: Single soliton, two-soliton collision, breather solutions, modulation instability
-- **Enhanced Numerical Stability**: DOP853 solver, adaptive time-stepping, conservation law monitoring
-- **High Performance**: Optional Numba JIT compilation for speed
-- **Flexible Configuration**: Support for both YAML and TXT configuration files
-- **Progress Tracking**: Real-time progress bars with tqdm
-- **Comprehensive Logging**: Detailed logs for each simulation
-- **Professional Visualization**: FiveThirtyEight-style animations
-- **Data Management**: NetCDF output format with institutional metadata
-- **Conservation Monitoring**: Real-time tracking of conserved quantities
 
 ## Installation
 
