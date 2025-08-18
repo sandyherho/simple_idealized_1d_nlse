@@ -4,12 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Tests](https://img.shields.io/badge/tests-passing-success.svg)](https://github.com/samuderasains/simple-idealized-1d-nlse/actions)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://codecov.io/gh/samuderasains/simple-idealized-1d-nlse)
 [![PyPI version](https://img.shields.io/pypi/v/simple-idealized-1d-nlse.svg)](https://pypi.org/project/simple-idealized-1d-nlse/)
-[![Downloads](https://img.shields.io/pypi/dm/simple-idealized-1d-nlse.svg)](https://pypi.org/project/simple-idealized-1d-nlse/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/samuderasains/simple-idealized-1d-nlse/graphs/commit-activity)
-[![GitHub stars](https://img.shields.io/github/stars/samuderasains/simple-idealized-1d-nlse.svg?style=social)](https://github.com/samuderasains/simple-idealized-1d-nlse)
 
 A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation (NLSE) using pseudo-spectral methods
 
@@ -28,7 +23,7 @@ The solver employs a **Fourier pseudo-spectral method** combined with high-order
 #### Spatial Discretization
 Using the Fourier transform $\hat{\psi}(k,t) = \mathcal{F}[\psi(x,t)]$, the NLSE becomes:
 
-$$\frac{\partial \hat{\psi}}{\partial t} = -\frac{i}{2}k^2\hat{\psi} + i\mathcal{F}[|\psi|^2\psi]$$
+$$\frac{\partial \hat{\psi}}{\partial t} = -\frac{i}{2}k^2\hat{\psi} + i\mathcal{F}[|\psi|^2\psi],$$
 
 where spatial derivatives are computed spectrally:
 - $\mathcal{F}[\partial^2_x \psi] = -k^2 \hat{\psi}$
@@ -50,11 +45,11 @@ is solved using the **8th-order Dormand-Prince method (DOP853)** with adaptive t
 
 The solver monitors three conserved quantities to ensure numerical stability:
 
-1. **Mass (L² norm)**: $M = \int_{-\infty}^{\infty} |\psi|^2 dx$
+- **Mass (L² norm)**: $M = \int_{-\infty}^{\infty} |\psi|^2 dx$
 
-2. **Momentum**: $P = \int_{-\infty}^{\infty} \text{Im}(\psi^* \partial_x \psi) dx$
+- **Momentum**: $P = \int_{-\infty}^{\infty} \text{Im}(\psi^* \partial_x \psi) dx$
 
-3. **Energy (Hamiltonian)**: $E = \int_{-\infty}^{\infty} \left[\frac{1}{2}|\partial_x \psi|^2 - \frac{1}{2}|\psi|^4\right] dx$
+- **Energy (Hamiltonian)**: $E = \int_{-\infty}^{\infty} \left[\frac{1}{2}|\partial_x \psi|^2 - \frac{1}{2}|\psi|^4\right] dx$
 
 ### Key Features
 
@@ -139,7 +134,5 @@ If you use this software in your research, please cite:
             Lugina, Fikry P. and Suwarman, Rusmawan and Irawan, Dasapta E.},
   year = {2025},
   version = {0.0.1},
-  institution = {Samudera Sains Teknologi Ltd.},
   url = {https://github.com/sandyherho/simple_idealized_1d_nlse}
 }
-```

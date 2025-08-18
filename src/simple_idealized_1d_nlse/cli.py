@@ -19,7 +19,7 @@ def print_header():
     header = """
     ═══════════════════════════════════════════════════════════════════════════════
                                                                                    
-                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.1                         
+                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.2                         
                                                                                    
          ~~~∿∿∿~~~  ψ  ~~~∿∿∿~~~  |ψ|²  ~~~∿∿∿~~~  ∂ψ/∂t  ~~~∿∿∿~~~           
                                                                                    
