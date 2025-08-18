@@ -50,7 +50,7 @@ def print_scenario_header(scenario_name: str):
     header = f"""
     ─────────────────────────────────────────────────────────────────────────────
       Executing Scenario: {scenario_name:<54} 					  
-      ~~~∿∿∿ Solving NLSE with Spectral Methods ∿∿∿~~~                         
+      ~~~∿∿∿ Solving NLSE with Pseudo-spectral Methods ∿∿∿~~~                         
     ─────────────────────────────────────────────────────────────────────────────
     """
     print(header)
