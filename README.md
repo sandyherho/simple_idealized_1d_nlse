@@ -44,8 +44,6 @@ pip install -e .
 
 ## Quick Start
 
-### Command Line Interface
-
 ```bash
 # Run single scenario with YAML config
 nlse-simulate single_soliton
