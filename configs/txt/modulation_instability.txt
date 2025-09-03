@@ -1,7 +1,7 @@
 # Modulation Instability Configuration (TXT Format)
 # Date: 2025-08-13
 # Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
-#          Fikry P. Lugina, Rusmawan Suwarman, Dasapta E. Irawan
+#          Edi Riawan, Rusmawan Suwarman, Dasapta E. Irawan
 
 # Scenario identification
 scenario_name = Modulation Instability
