@@ -39,11 +39,11 @@ class DataHandler:
             # Institutional metadata
             nc.institution = "Samudera Sains Teknologi Ltd."
             nc.department = "Computational Earth and Environmental Science Division"
-            nc.description = "NLSE Simulation Results"
+            nc.description = "1D NLSE Simulation Results"
             nc.equation = "i∂ψ/∂t + (1/2)∂²ψ/∂x² + |ψ|²ψ = 0"
             nc.created = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            nc.software = "simple_idealized_1d_nlse v0.0.1"
-            nc.authors = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Fikry P. Lugina, Rusmawan Suwarman, Dasapta E. Irawan"
+            nc.software = "simple_idealized_1d_nlse v0.0.3"
+            nc.authors = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan, Rusmawan Suwarman, Dasapta E. Irawan"
             nc.contact = "sandy.herho@email.ucr.edu"
             nc.license = "WTFPL"
             

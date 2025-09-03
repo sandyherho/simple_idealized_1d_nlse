@@ -20,7 +20,7 @@ class SimulationLogger:
         self.logger = self._setup_logger()
         
         self.info("="*70)
-        self.info(f"NLSE Simulation Log - {scenario_name}")
+        self.info(f"1D NLSE Simulation Log - {scenario_name}")
         self.info(f"Institution: Samudera Sains Teknologi Ltd.")
         self.info(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         self.info("="*70)

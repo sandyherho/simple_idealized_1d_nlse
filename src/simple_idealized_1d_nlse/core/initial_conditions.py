@@ -1,9 +1,9 @@
 """
-Initial Conditions for NLSE (ψ notation)
+Initial Conditions for 1D NLSE
 =========================================
 
 Date: 2025-08-13
-Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Fikry P. Lugina,
+Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
          Rusmawan Suwarman, Dasapta E. Irawan
 """
 

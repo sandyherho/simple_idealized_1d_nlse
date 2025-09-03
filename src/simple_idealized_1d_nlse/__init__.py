@@ -6,13 +6,13 @@ A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation.
 
 Version: 0.0.1
 Date: 2025-08-13
-Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Fikry P. Lugina,
+Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
          Rusmawan Suwarman, Dasapta E. Irawan
 License: WTFPL
 """
 
 __version__ = "0.0.1"
-__author__ = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Fikry P. Lugina, Rusmawan Suwarman, Dasapta E. Irawan"
+__author__ = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan, Rusmawan Suwarman, Dasapta E. Irawan"
 __email__ = "sandy.herho@email.ucr.edu"
 __institution__ = "Samudera Sains Teknologi Ltd."
 __license__ = "WTFPL"

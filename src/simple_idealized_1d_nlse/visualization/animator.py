@@ -16,7 +16,7 @@ class Animator:
     @staticmethod
     def create_gif(x: np.ndarray, t: np.ndarray, psi: np.ndarray,
                   filename: str, output_dir: str = "../outputs",
-                  title: str = "NLSE Evolution", xlim: Optional[Tuple[float, float]] = None,
+                  title: str = "1D NLSE Evolution", xlim: Optional[Tuple[float, float]] = None,
                   fps: int = 20, dpi: int = 100, verbose: bool = True,
                   logger: Optional[Any] = None) -> None:
         """Create animated GIF of wave function evolution in FiveThirtyEight style."""

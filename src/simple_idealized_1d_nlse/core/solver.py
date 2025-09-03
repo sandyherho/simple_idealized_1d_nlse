@@ -1,11 +1,11 @@
 """
-NLSE Solver Core Implementation with Enhanced Numerical Stability
+1D NLSE Solver Core Implementation with Enhanced Numerical Stability
 ==================================================================
 
 Solves: i∂ψ/∂t + (1/2)∂²ψ/∂x² + |ψ|²ψ = 0
 
 Date: 2025-08-13
-Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Fikry P. Lugina,
+Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
          Rusmawan Suwarman, Dasapta E. Irawan
 """
 
@@ -90,7 +90,7 @@ class NLSESolver:
         logger: Optional[Any] = None
     ):
         """
-        Initialize the NLSE solver with enhanced stability features.
+        Initialize the 1D NLSE solver with enhanced stability features.
         
         Parameters
         ----------
