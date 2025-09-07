@@ -43,7 +43,7 @@ class DataHandler:
             nc.equation = "i∂ψ/∂t + (1/2)∂²ψ/∂x² + |ψ|²ψ = 0"
             nc.created = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             nc.software = "simple_idealized_1d_nlse v0.0.3"
-            nc.authors = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan, Rusmawan Suwarman, Dasapta E. Irawan"
+            nc.authors = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Rusmawan Suwarman, Dasapta E. Irawan"
             nc.contact = "sandy.herho@email.ucr.edu"
             nc.license = "WTFPL"
             

@@ -19,13 +19,13 @@ def print_header():
     header = """
     ═══════════════════════════════════════════════════════════════════════════════
                                                                                    
-                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.0.3                         
+                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.0.4                         
                                                                                    
          ~~~∿∿∿~~~  ψ  ~~~∿∿∿~~~  |ψ|²  ~~~∿∿∿~~~  ∂ψ/∂t  ~~~∿∿∿~~~           
                                                                                    
                         Samudera Sains Teknologi Ltd.          
                         
-       Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
+       Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
        Rusmawan Suwarman, Dasapta E. Irawan                    
            
            LICENSE: DO WHAT THE F*CK YOU WANT TO PUBLIC LICENSE                     

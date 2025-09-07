@@ -5,7 +5,7 @@
 Solves: i∂ψ/∂t + (1/2)∂²ψ/∂x² + |ψ|²ψ = 0
 
 Date: 2025-08-13
-Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
+Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
          Rusmawan Suwarman, Dasapta E. Irawan
 """
 

@@ -3,7 +3,7 @@ Initial Conditions for 1D NLSE
 =========================================
 
 Date: 2025-08-13
-Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Edi Riawan,
+Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
          Rusmawan Suwarman, Dasapta E. Irawan
 """
 

@@ -1,12 +1,11 @@
 [tool.poetry]
 name = "simple-idealized-1d-nlse"
-version = "0.0.3"
+version = "0.0.4"
 description = "A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation"
 authors = [
     "Sandy H. S. Herho <sandy.herho@email.ucr.edu>",
     "Iwan P. Anwar",
     "Faruq Khadami",
-    "Edi Riawan",
     "Rusmawan Suwarman",
     "Dasapta E. Irawan"
 ]

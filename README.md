@@ -115,7 +115,6 @@ simple_idealized_1d_nlse/
 - **Sandy H. S. Herho** - sandy.herho@email.ucr.edu
 - **Iwan P. Anwar** 
 - **Faruq Khadami** 
-- **Edi Riawan** 
 - **Rusmawan Suwarman** 
 - **Dasapta E. Irawan** 
 
@@ -131,8 +130,8 @@ If you use this software in your research, please cite:
 @software{nlse_solver_2025,
   title = {Simple Idealized 1D NLSE Solver},
   author = {Herho, Sandy H. S. and Anwar, Iwan P. and Khadami, Faruq and 
-            Riawan, Edi and Suwarman, Rusmawan and Irawan, Dasapta E.},
+           Suwarman, Rusmawan and Irawan, Dasapta E.},
   year = {2025},
-  version = {0.0.3},
+  version = {0.0.4},
   url = {https://github.com/sandyherho/simple_idealized_1d_nlse}
 }
