@@ -19,7 +19,7 @@ def print_header():
     header = """
     ═══════════════════════════════════════════════════════════════════════════════
                                                                                    
-                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.0.4                         
+                  1D NLSE SOLITON DYNAMICS SIMULATOR v.0.0.5                         
                                                                                    
          ~~~∿∿∿~~~  ψ  ~~~∿∿∿~~~  |ψ|²  ~~~∿∿∿~~~  ∂ψ/∂t  ~~~∿∿∿~~~           
                                                                                    
@@ -39,7 +39,7 @@ def print_footer():
     footer = """
     ═══════════════════════════════════════════════════════════════════════════════
                         Simulation Complete | ψ(x,t) Computed Successfully
-                              Contact: sandy.herho@email.ucr.edu
+                              Contact: sandyherho@itb.ac.id
     ═══════════════════════════════════════════════════════════════════════════════
     """
     print(footer)

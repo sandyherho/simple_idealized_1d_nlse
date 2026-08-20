@@ -71,7 +71,7 @@ pip install simple-idealized-1d-nlse
 ### From source
 
 ```bash
-git clone https://github.com/samuderasains/simple-idealized-1d-nlse.git
+git clone https://github.com/sandyherho/simple-idealized-1d-nlse.git
 cd simple-idealized-1d-nlse
 pip install -e .
 ```
@@ -112,7 +112,7 @@ simple_idealized_1d_nlse/
 
 ## Authors
 
-- **Sandy H. S. Herho** - sandy.herho@email.ucr.edu
+- **Sandy H. S. Herho** - sandyherho@itb.ac.id
 - **Iwan P. Anwar** 
 - **Faruq Khadami** 
 - **Rusmawan Suwarman** 
@@ -135,3 +135,4 @@ If you use this software in your research, please cite:
   version = {0.0.4},
   url = {https://github.com/sandyherho/simple_idealized_1d_nlse}
 }
+```

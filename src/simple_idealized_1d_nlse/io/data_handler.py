@@ -44,7 +44,7 @@ class DataHandler:
             nc.created = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             nc.software = "simple_idealized_1d_nlse v0.0.3"
             nc.authors = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Rusmawan Suwarman, Dasapta E. Irawan"
-            nc.contact = "sandy.herho@email.ucr.edu"
+            nc.contact = "sandyherho@itb.ac.id"
             nc.license = "WTFPL"
             
             if metadata and 'scenario_name' in metadata:

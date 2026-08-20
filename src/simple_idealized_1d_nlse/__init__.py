@@ -4,16 +4,16 @@ Simple Idealized 1D NLSE Solver
 
 A flexible and efficient solver for the 1D Nonlinear Schrödinger Equation.
 
-Version: 0.0.4
+Version: 0.0.5
 Date: 2025-08-13
 Authors: Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami,
          Rusmawan Suwarman, Dasapta E. Irawan
 License: WTFPL
 """
 
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 __author__ = "Sandy H. S. Herho, Iwan P. Anwar, Faruq Khadami, Rusmawan Suwarman, Dasapta E. Irawan"
-__email__ = "sandy.herho@email.ucr.edu"
+__email__ = "sandyherho@itb.ac.id"
 __institution__ = "Samudera Sains Teknologi Ltd."
 __license__ = "WTFPL"
 
