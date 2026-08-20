@@ -127,12 +127,14 @@ This project is licensed under the WTFPL License - see the [LICENSE](LICENSE) fi
 If you use this software in your research, please cite:
 
 ```bibtex
-@software{nlse_solver_2025,
-  title = {Simple Idealized 1D NLSE Solver},
-  author = {Herho, Sandy H. S. and Anwar, Iwan P. and Khadami, Faruq and 
-           Suwarman, Rusmawan and Irawan, Dasapta E.},
-  year = {2025},
-  version = {0.0.4},
-  url = {https://github.com/sandyherho/simple_idealized_1d_nlse}
+@article{HerhoEtAl_NLSE_2026, 
+	title={{Simple-idealized-1d-nlse: Pseudo-spectral solver for the 1D nonlinear Schrödinger equation}}, 
+	volume={23},  
+	number={2}, 
+	journal={Revista Mexicana de Física E}, 
+	author={Herho, Sandy and Anwar, Iwan and Khadami, Faruq and Suwarman, Rusmawan and Irawan, Dasapta}, 
+	year={2026}, 
+	pages={1–18},
+	note={\url{https://doi.org/10.31349/RevMexFisE.23.020206}} 
 }
 ```
